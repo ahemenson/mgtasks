@@ -8,6 +8,7 @@ import { AngularmService, EntityTypeComponent, FlashMessageService, Entity, Titl
   selector: 'div [mgListingTable]',
   template: `<div *ngIf="entityType">
     <h1>Listing {{ entityType.plural | titleCase }}</h1>
+    
     <table [ngClass]="configuration.tableClass">
       <thead>
         <tr>
